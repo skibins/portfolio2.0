@@ -10,44 +10,51 @@ const HIGHLIGHTS = [
   {
     icon: Cloud,
     title: "Cloud Engineering",
-    desc: "Designing and managing scalable cloud infrastructure on Azure with a focus on reliability and cost optimization.",
-    image: "/projects/k8s-provisioner.jpg",
+    desc: "Supporting and improving cloud-native environments on Azure and Kubernetes with a strong focus on production reliability, troubleshooting and operational stability.",
+    image: "/projects/cloud.jpg",
   },
   {
     icon: Server,
     title: "DevOps & Automation",
-    desc: "Building CI/CD pipelines, automating deployments with Kubernetes and Docker, and improving operational efficiency.",
-    image: "/projects/cicd-pipeline.jpg",
+    desc: "Building internal automation tools, operational bots, and scripting solutions that streamline workflows, reduce repetitive tasks and improve engineering efficiency.",
+    image: "/projects/automation.jpg",
   },
   {
     icon: Terminal,
     title: "Software Development",
-    desc: "Developing robust backend services and tooling in Java, Python, and Bash to solve real engineering problems.",
-    image: "/projects/log-platform.jpg",
+    desc: "Developing internal tools and automation solutions in JS/TS, Bash and Python to solve complex operational and production engineering challenges.",
+    image: "/projects/development.jpg",
   },
 ];
 
 const TIMELINE = [
   {
     icon: Briefcase,
-    period: "2022 — Present",
-    title: "Cloud Engineer",
-    place: "Acme Cloud Solutions",
-    desc: "Managing Kubernetes clusters, designing CI/CD pipelines, and maintaining Azure infrastructure for enterprise clients.",
+    period: "2024 — Present",
+    title: "Software Engineer | Cloud Support",
+    place: "SAP",
+    desc: "Supporting cloud-native production environments on Kubernetes and Azure, building internal automation tools, and troubleshooting infrastructure and Java application issues.",
   },
   {
     icon: Briefcase,
-    period: "2020 — 2022",
-    title: "Junior Software Engineer",
-    place: "TechStart GmbH",
-    desc: "Built internal tooling with Python and Java, automated deployment workflows, and contributed to microservice architecture.",
+    period: "2024",
+    title: "Python Developer",
+    place: "ASD Systems",
+    desc: "Developed automation scripts and operational tooling in Python and Bash, improving workflow efficiency and system reliability.",
+  },
+  {
+    icon: Briefcase,
+    period: "2020 — 2021",
+    title: "Intern Fullstack Developer",
+    place: "EPLAN Software & Service",
+    desc: "Contributed to a team-built web application with REST API and database integration in an Agile development environment.",
   },
   {
     icon: GraduationCap,
-    period: "2016 — 2020",
-    title: "B.Sc. Computer Science",
-    place: "University of Technology",
-    desc: "Focused on distributed systems, networking, and cloud computing fundamentals.",
+    period: "2023 — 2027",
+    title: "B.Eng. Computer Science",
+    place: "Silesian University of Technology in Gliwice",
+    desc: "Engineering studies focused on software development, data structures, databases, and analytical problem-solving.",
   },
 ];
 
@@ -69,14 +76,21 @@ export default function About() {
         <div className="flex-1">
           <h2 className="section-title">About Me</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            I'm a mid-level Software and Cloud Engineer with a strong focus on
-            building production-grade infrastructure and automating everything I
-            can. I value clean code, reliable systems, and continuous learning.
+            I’m a Software Engineer focused on cloud infrastructure, automation,
+            and production reliability. I work with Kubernetes, Azure, Bash,
+            Python and Java to support large-scale cloud environments, debug
+            production issues and build internal tools used by engineering teams
+            globally.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            I enjoy transforming complex operational challenges into scalable,
+            reliable solutions and creating automation that improves both system
+            stability and engineer efficiency.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            When I'm not deploying clusters or writing automation scripts, I
-            enjoy contributing to open source projects and exploring new
-            cloud-native technologies.
+            Outside of engineering, I enjoy continuously learning new
+            technologies, creating video content, and recharging through
+            mountain hikes and outdoor activities.
           </p>
         </div>
       </div>
@@ -128,7 +142,7 @@ export default function About() {
                 <div className="w-8 h-8 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center flex-shrink-0">
                   <entry.icon size={14} className="text-primary" />
                 </div>
-                {i < 2 && <div className="w-0.5 flex-1 bg-border mt-2" />}
+                {i < 4 && <div className="w-0.5 flex-1 bg-border mt-2" />}
               </div>
               <div className="pb-2">
                 <span className="text-xs font-mono text-primary">

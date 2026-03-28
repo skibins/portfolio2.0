@@ -1,37 +1,41 @@
 import { ExternalLink, Github } from "lucide-react";
-import k8sImg from "/projects/k8s-provisioner.jpg";
-import cicdImg from "/projects/cicd-pipeline.jpg";
-import logImg from "/projects/log-platform.jpg";
-import infraImg from "/projects/infra-monitor.jpg";
+import pythonImg from "/projects/python.png";
+import javaImg from "/projects/java.png";
+import flaskImg from "/projects/flask.png";
+import angularImg from "/projects/angular.png";
 
 const PROJECTS = [
   {
-    title: "K8s Cluster Provisioner",
-    description: "Automated Kubernetes cluster provisioning on Azure using Terraform and Bash scripts. Includes monitoring setup with Prometheus and Grafana.",
-    tech: ["Kubernetes", "Terraform", "Azure", "Bash", "Prometheus"],
-    github: "https://github.com",
-    image: k8sImg,
+    title: "AI Banking Assistant (Python)",
+    description:
+      "AI-powered banking assistant built with Python and Flask, enabling users to interact with account data and perform actions through natural language queries.",
+    tech: ["Python", "Flask", "JavaScript", "REST API", "GenAI"],
+    github: "https://github.com/skibins/MyBankAIAssistant",
+    image: pythonImg,
   },
   {
-    title: "CI/CD Pipeline Framework",
-    description: "Reusable CI/CD pipeline templates for multi-service deployments. Supports Docker builds, automated testing, and blue-green deployments.",
-    tech: ["Docker", "GitHub Actions", "Python", "Bash"],
-    github: "https://github.com",
-    image: cicdImg,
+    title: "AI Banking Assistant 2.0 (Java)",
+    description:
+      "Re-engineered version of the AI banking assistant built with Java and Spring, focusing on improved architecture and backend scalability.",
+    tech: ["Java", "Spring", "JavaScript", "REST API", "GenAI"],
+    github: "https://github.com/skibins/BankAIAssistant2.0",
+    image: javaImg,
   },
   {
-    title: "Log Aggregation Platform",
-    description: "Centralized logging solution using OpenSearch and custom Python ingestors. Processes millions of log entries daily with real-time alerting.",
-    tech: ["OpenSearch", "Python", "Docker", "Azure"],
-    github: "https://github.com",
-    image: logImg,
+    title: "AI Code Evaluation Platform (WIP)",
+    description:
+      "(Work-In-Progress) Platform for automatic validation of code, including code correctness, output verification, edge case handling, optimization checks and AI-assisted evaluation via API integration.",
+    tech: ["Python", "Flask / Django", "REST API", "AI", "Automation"],
+    github: null,
+    image: flaskImg,
   },
   {
-    title: "Infrastructure Monitor",
-    description: "Real-time infrastructure health dashboard with custom Dynatrace integrations. Provides SLA tracking and automated incident response.",
-    tech: ["TypeScript", "Dynatrace", "Azure SQL", "Flask"],
-    github: "https://github.com",
-    image: infraImg,
+    title: "Book Rental Web App",
+    description:
+      "Fullstack web application for managing book rentals with REST API integration, built in Angular with focus on UI and client-server communication.",
+    tech: ["Angular", "TypeScript", "REST API", "HTML/CSS"],
+    github: "https://github.com/skibins/angular-book-rental",
+    image: angularImg,
   },
 ];
 
@@ -64,7 +68,9 @@ export default function Projects() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {project.title}
+                </h3>
                 <a
                   href={project.github}
                   target="_blank"

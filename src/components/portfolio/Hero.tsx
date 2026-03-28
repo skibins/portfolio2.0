@@ -71,9 +71,10 @@ export default function Hero() {
               className="text-lg text-muted-foreground max-w-xl mb-10 fade-up"
               style={{ transitionDelay: "0.3s" }}
             >
-              Building scalable cloud infrastructure and reliable software
-              systems. Focused on Kubernetes, Azure, and modern DevOps
-              practices.
+              Focused on cloud infrastructure, production reliability, and
+              engineering automation at scale. Building internal tools and
+              operational bots that improve workflows across Kubernetes and
+              Azure environments.
             </p>
             <div
               className="flex flex-wrap gap-4 fade-up"

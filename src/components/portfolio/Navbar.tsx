@@ -28,7 +28,7 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
           href="#hero"
           className="text-lg font-semibold tracking-tight text-foreground"
         >
-          <span className="text-gradient">JS</span>
+          <span className="text-gradient">/skibins</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

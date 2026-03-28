@@ -1,5 +1,11 @@
 import {
-  Code2, Cloud, Globe, Layers, Database, Wrench, GitBranch,
+  Code2,
+  Cloud,
+  Globe,
+  Layers,
+  Database,
+  Wrench,
+  GitBranch,
 } from "lucide-react";
 import { type LucideIcon } from "lucide-react";
 
@@ -18,12 +24,12 @@ const CATEGORIES: Category[] = [
   {
     name: "Cloud & Infra",
     icon: Cloud,
-    items: ["Kubernetes", "Azure", "Linux", "Docker"],
+    items: ["Kubernetes", "Azure", "Linux", "Docker", "Podman"],
   },
   {
     name: "Web & Scripting",
     icon: Globe,
-    items: ["JavaScript", "TypeScript", "HTML", "CSS"],
+    items: ["JavaScript", "TypeScript", "HTML", "CSS", "Scss"],
   },
   {
     name: "Frameworks",
@@ -38,7 +44,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Tools",
     icon: Wrench,
-    items: ["Git", "GitHub", "Jira", "OpenSearch", "Dynatrace"],
+    items: ["Git", "GitHub", "Jira", "GenAI", "OpenSearch", "Dynatrace"],
   },
 ];
 
@@ -49,7 +55,7 @@ export default function TechStack() {
         <div className="mb-12 fade-up">
           <h2 className="section-title">Tech Stack</h2>
           <p className="section-subtitle">
-            Technologies and tools I work with on a daily basis.
+            Technologies and tools I work (or worked) with on a daily basis.
           </p>
         </div>
 
@@ -64,7 +70,9 @@ export default function TechStack() {
                 <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <cat.icon size={18} className="text-primary" />
                 </div>
-                <h3 className="text-sm font-semibold text-foreground">{cat.name}</h3>
+                <h3 className="text-sm font-semibold text-foreground">
+                  {cat.name}
+                </h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {cat.items.map((item) => (
@@ -81,9 +89,15 @@ export default function TechStack() {
         </div>
 
         {/* Methodologies note */}
-        <div className="mt-8 flex items-center gap-3 text-sm text-muted-foreground fade-up" style={{ transitionDelay: "0.5s" }}>
+        <div
+          className="mt-8 flex items-center gap-3 text-sm text-muted-foreground fade-up"
+          style={{ transitionDelay: "0.5s" }}
+        >
           <GitBranch size={16} className="text-primary flex-shrink-0" />
-          <span>Working with <strong className="text-foreground">Agile</strong> & <strong className="text-foreground">Scrum</strong> methodologies</span>
+          <span>
+            Working with <strong className="text-foreground">Agile</strong> &{" "}
+            <strong className="text-foreground">Scrum</strong> methodologies
+          </span>
         </div>
       </div>
     </section>
