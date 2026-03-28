@@ -1,3 +1,7 @@
+import cloudImg from "/projects/cloud.jpg";
+import automationImg from "/projects/automation.jpg";
+import developmentImg from "/projects/development.jpg";
+import avatar from "/avatar.png";
 import {
   Cloud,
   Server,
@@ -11,19 +15,19 @@ const HIGHLIGHTS = [
     icon: Cloud,
     title: "Cloud Engineering",
     desc: "Supporting and improving cloud-native environments on Azure and Kubernetes with a strong focus on production reliability, troubleshooting and operational stability.",
-    image: "/projects/cloud.jpg",
+    image: cloudImg,
   },
   {
     icon: Server,
     title: "DevOps & Automation",
     desc: "Building internal automation tools, operational bots, and scripting solutions that streamline workflows, reduce repetitive tasks and improve engineering efficiency.",
-    image: "/projects/automation.jpg",
+    image: automationImg,
   },
   {
     icon: Terminal,
     title: "Software Development",
     desc: "Developing internal tools and automation solutions in JS/TS, Bash and Python to solve complex operational and production engineering challenges.",
-    image: "/projects/development.jpg",
+    image: developmentImg,
   },
 ];
 
@@ -66,7 +70,7 @@ export default function About() {
         <div className="w-full md:w-2/5 flex-shrink-0">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border border-border">
             <img
-              src="/avatar.png"
+              src={avatar}
               alt="Jan Skibinski"
               loading="lazy"
               className="w-full h-full object-cover"

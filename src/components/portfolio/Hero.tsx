@@ -1,4 +1,5 @@
 import { ChevronDown, Mail } from "lucide-react";
+import avatar from "/avatar.png";
 
 function CloudShape({ style }: { style?: React.CSSProperties }) {
   return (
@@ -104,7 +105,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden ring-4 ring-primary/20 ring-offset-4 ring-offset-background shadow-xl">
                 <img
-                  src="/avatar.png"
+                  src={avatar}
                   alt="Jan Skibinski profile photo"
                   width={256}
                   height={256}
