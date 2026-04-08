@@ -37,7 +37,7 @@ const TIMELINE = [
     period: "2024 — Present",
     title: "Software Engineer | Cloud Support",
     place: "SAP",
-    desc: "Supporting cloud-native production environments on Kubernetes and Azure, building internal automation tools, and troubleshooting infrastructure and Java application issues.",
+    desc: "Supporting cloud-native production environments on Kubernetes and Azure, building internal automation tools and bots used globally, troubleshooting infrastructure and Java application issues.",
   },
   {
     icon: Briefcase,
