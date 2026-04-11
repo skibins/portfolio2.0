@@ -6,31 +6,39 @@ import angularImg from "/projects/angular.png";
 
 const PROJECTS = [
   {
-    title: "AI Banking Assistant (Python)",
+    title: "Klints (Python)",
     description:
-      "AI-powered banking assistant built with Python and Flask, enabling users to interact with account data and perform actions through natural language queries.",
-    tech: ["Python", "Flask", "JavaScript", "REST API", "GenAI"],
-    github: "https://github.com/skibins/MyBankAIAssistant",
+      "A read-only Kubernetes diagnosis platform for pods and workload controllers. It combines deterministic troubleshooting rules with schema-validated LLM synthesis to produce incident-style reports for DevOps, SRE and platform engineering workflows.",
+    tech: [
+      "Python",
+      "Flask",
+      "TypeScript",
+      "K8s",
+      "Docker",
+      "REST API",
+      "GenAI",
+    ],
+    github: "https://github.com/skibins/Klints",
     image: pythonImg,
   },
   {
     title: "AI Banking Assistant 2.0 (Java)",
     description:
-      "Re-engineered version of the AI banking assistant built with Java and Spring, focusing on improved architecture and backend scalability.",
+      "Re-engineered version of the AI banking assistant (first version was built using Python/Flask) built with Java and Spring, focusing on improved architecture and backend scalability.",
     tech: ["Java", "Spring", "JavaScript", "REST API", "GenAI"],
     github: "https://github.com/skibins/BankAIAssistant2.0",
     image: javaImg,
   },
   {
-    title: "AI Code Evaluation Platform (WIP)",
+    title: "AI Code Evaluation Platform",
     description:
-      "(Work-In-Progress) Platform for automatic validation of code, including code correctness, output verification, edge case handling, optimization checks and AI-assisted evaluation via API integration.",
-    tech: ["Python", "Flask / Django", "REST API", "AI", "Automation"],
+      "(Work-In-Progress) Platform for automatic validation of code, including code correctness, output verification, syntax, performance, optimization checks and AI-assisted evaluation via API integration.",
+    tech: ["Python", "Flask", "REST API", "AI", "Automation"],
     github: null,
     image: flaskImg,
   },
   {
-    title: "Book Rental Web App",
+    title: "Book Rental Web App (Typescript)",
     description:
       "Fullstack web application for managing book rentals with REST API integration, built in Angular with focus on UI and client-server communication.",
     tech: ["Angular", "TypeScript", "REST API", "HTML/CSS"],
