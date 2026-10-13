@@ -6,6 +6,9 @@ import {
   Database,
   Wrench,
   GitBranch,
+  Activity,
+  Bot,
+  Shield,
 } from "lucide-react";
 import { type LucideIcon } from "lucide-react";
 
@@ -19,32 +22,70 @@ const CATEGORIES: Category[] = [
   {
     name: "Programming",
     icon: Code2,
-    items: ["Java", "Python", "Bash", "C++"],
+    items: ["Python", "Bash", "SQL", "Java"],
   },
   {
-    name: "Cloud & Infra",
+    name: "Cloud / Infrastructure",
     icon: Cloud,
-    items: ["Kubernetes", "Azure", "Linux", "Docker", "Podman"],
+    items: [
+      "Azure",
+      "Azure CLI",
+      "AKS",
+      "Kubernetes",
+      "Linux",
+      "Docker",
+      "CI/CD troubleshooting",
+      "SaaS",
+      "PaaS",
+    ],
   },
   {
     name: "Web & Scripting",
     icon: Globe,
-    items: ["JavaScript", "TypeScript", "HTML", "CSS", "Scss"],
+    items: [
+      "Apache Tomcat",
+      "REST APIs",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+    ],
   },
   {
-    name: "Frameworks",
+    name: "Frameworks & Libraries",
     icon: Layers,
-    items: ["Selenium", "Spring", "Flask"],
+    items: ["Selenium", "Spring (basics)", "Flask (basics)"],
   },
   {
     name: "Databases",
     icon: Database,
-    items: ["Azure SQL", "MySQL", "MongoDB"],
+    items: ["Azure SQL Database", "MySQL", "MongoDB"],
   },
   {
     name: "Tools",
     icon: Wrench,
-    items: ["Git", "GitHub", "Jira", "GenAI", "OpenSearch", "Dynatrace"],
+    items: ["Git", "GitHub", "Jira", "Slack", "Microsoft 365", "ServiceNow"],
+  },
+  {
+    name: "Monitoring",
+    icon: Activity,
+    items: ["Dynatrace", "OpenSearch", "Azure Log Analytics"],
+  },
+  {
+    name: "AI-Assisted Engineering",
+    icon: Bot,
+    items: ["Claude Code", "GitHub Copilot", "ChatGPT", "MCP Servers"],
+  },
+  {
+    name: "Additional (Self-Study)",
+    icon: Shield,
+    items: [
+      "IaC - Terraform",
+      "Azure DevOps",
+      "CI/CD implementation",
+      "YAML pipelines",
+      "Networking & Security",
+    ],
   },
 ];
 

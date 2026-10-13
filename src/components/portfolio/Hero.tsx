@@ -64,9 +64,9 @@ export default function Hero() {
               className="text-2xl md:text-3xl font-light text-muted-foreground mb-6 fade-up"
               style={{ transitionDelay: "0.2s" }}
             >
-              Software Engineer{" "}
-              <span className="text-gradient font-medium">/</span> Cloud
-              Engineer
+              Cloud Engineer{" "}
+              <span className="text-gradient font-medium">|</span>{" "}
+              Infrastructure & Automation
             </p>
             <p
               className="text-lg text-muted-foreground max-w-xl mb-10 fade-up"

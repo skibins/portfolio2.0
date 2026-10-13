@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   {
     icon: Server,
     title: "DevOps & Automation",
-    desc: "Building internal automation tools, operational bots, and scripting solutions that streamline workflows, reduce repetitive tasks and improve engineering efficiency.",
+    desc: "Building internal automation tools, operational bots, and scripting solutions that streamline workflows, reduce repetitive tasks and improve engineering efficiency, while also troubleshooting CI/CD pipelines.",
     image: automationImg,
   },
   {
