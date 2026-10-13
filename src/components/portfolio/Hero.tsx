@@ -113,7 +113,7 @@ export default function Hero() {
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-12 h-12 rounded-full bg-primary/10 backdrop-blur-sm flex items-center justify-center">
-                <span className="text-lg">🤓</span>
+                <span className="text-lg">🫠</span>
               </div>
             </div>
           </div>
